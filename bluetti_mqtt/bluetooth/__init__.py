@@ -41,7 +41,7 @@ def build_device(address: str, name: str):
         return EP600(address, match[2])
     if match[1] == 'EB3A':
         return EB3A(address, match[2])
-    if match[1] == 'EB3A':
+    if match[1] == 'AC180':
         return AC180(address, match[2])
 
 
