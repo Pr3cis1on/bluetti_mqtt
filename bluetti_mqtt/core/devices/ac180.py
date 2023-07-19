@@ -19,7 +19,7 @@ class AC180(BluettiDevice):
         self.struct.add_sn_field('battery_serial_number', 6107)
         self.struct.add_version_field('bcu_version', 6175)
 
-        super().__init__(address, 'AC60', sn)
+        super().__init__(address, 'AC180', sn)
 
     @property
     def polling_commands(self) -> List[ReadHoldingRegisters]:
